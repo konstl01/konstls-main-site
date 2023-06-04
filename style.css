@@ -63,6 +63,7 @@ header ul {
     -webkit-backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .hamburger .bar {
