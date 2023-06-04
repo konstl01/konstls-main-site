@@ -14,7 +14,7 @@ function openMenu() {
     if(!menuOpen) {
         if(window.innerWidth >= 725) {
             menuOpen = true;
-            sidebar.style.width = "25%";
+            sidebar.style.width = "33%";
             overlay.style.width = "100vw";
         } else {
             menuOpen = true;
