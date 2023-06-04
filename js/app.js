@@ -1,9 +1,49 @@
 const parallax_el = document.querySelectorAll(".parallax");
 const main = document.querySelector("main");
+const hamburger = document.querySelector(".hamburger");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
 
 let xValue = 0, yValue = 0;
-
 let rotateDegree = 0;
+let menuOpen = false;
+
+closeMenu();
+
+function openMenu() {
+    if(!menuOpen) {
+        if(window.innerWidth >= 725) {
+            menuOpen = true;
+            sidebar.style.width = "25%";
+            overlay.style.width = "100vw";
+        } else {
+            menuOpen = true;
+            sidebar.style.width = "100vw";
+            overlay.style.width = "100vw";
+        }
+    }
+}
+
+function closeMenu() {
+    if(menuOpen) {
+        menuOpen = false;
+        sidebar.style.width = "0";
+        overlay.style.width = "0";
+    }
+}
+
+hamburger.addEventListener("click", () => {
+    if(menuOpen) {
+        closeMenu();
+    } else {
+        openMenu();
+    }
+});
+
+overlay.addEventListener("click", () => {
+    closeMenu();
+});
+
 
 function update(cursorPosition) {
     parallax_el.forEach((el) => {
