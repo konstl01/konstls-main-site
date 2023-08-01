@@ -96,3 +96,7 @@ if(window.innerWidth >= 725) {
 } else {
     main.style.maxHeight = `${window.innerWidth * 1.6}px`;
 }
+
+function redirect() {
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+}
