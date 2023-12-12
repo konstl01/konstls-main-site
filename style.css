@@ -150,8 +150,8 @@ main {
 .text {
     position: absolute;
     z-index: 6;
-    top: 30%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -164,9 +164,9 @@ main {
     line-height: 0.88;
 }
 
-.text h1 {
+.text div {
     font-weight: 800;
-    font-size: 8rem;
+    font-size: 10rem;
     line-height: 0.88;
 }
 
@@ -282,7 +282,7 @@ main {
         line-height: 1.1;
     }
 
-    .text h2{
+    .text div{
         font-size: 4.1rem;
         line-height: 1.1;
     }
@@ -356,7 +356,7 @@ main {
         font-size: 3.3rem;
     }
 
-    .text h2{
+    .text div{
         font-size: 2.6rem;
     }
 }
