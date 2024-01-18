@@ -9,6 +9,8 @@ let rotateDegree = 0;
 let menuOpen = false;
 
 closeMenu();
+updateBG();
+startTime();
 
 function openMenu() {
     if(!menuOpen) {
@@ -122,4 +124,56 @@ function startTime() {
   function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
+  }
+
+  function updateBG() {
+    let time = new Date().getHours();
+    var bg = document.querySelector(".bg-img");
+
+    switch(time) {
+        case 2:
+        case 3:
+        case 4:
+            bg.src = "/imgs/BG/BG1.svg";
+            break;
+        case 5:
+        case 6:
+        case 7:
+            bg.src = "/imgs/BG/BG2.svg";
+            break;
+        case 8:
+        case 9:
+            bg.src = "/imgs/BG/BG3.svg";
+            break;
+        case 10:
+        case 11:
+        case 12:
+            bg.src = "/imgs/BG/BG4.svg";
+            break;
+        case 13:
+        case 14:
+            bg.src = "/imgs/BG/BG5.svg";
+            break;
+        case 15:
+        case 16:
+        case 17:
+            bg.src = "/imgs/BG/BG6.svg";
+            break;
+        case 18:
+        case 19:
+            bg.src = "/imgs/BG/BG7.svg";
+            break;
+        case 20:
+        case 21:
+        case 22:
+            bg.src = "/imgs/BG/BG8.svg";
+            break;
+        case 23:
+        case 0:
+        case 1:
+            bg.src = "/imgs/BG/BG9.svg";
+            break;
+        default:
+            bg.src = "/imgs/BG/BG1.png";
+    }
   }
