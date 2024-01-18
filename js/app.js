@@ -174,6 +174,6 @@ function startTime() {
             bg.src = "/imgs/BG/BG9.svg";
             break;
         default:
-            bg.src = "/imgs/BG/BG1.png";
+            bg.src = "/imgs/BG/BG1.svg";
     }
   }
